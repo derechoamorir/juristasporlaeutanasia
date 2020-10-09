@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 0;
+}
+
+.inv {
+  display: none;
+}
+
+#background {
+  background: #e1f7f6;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1rem;
+  align-content: center;
+  justify-content: center;
+  color: rgb(74, 74, 74);
+  width: 100%;
+  max-height: 8rem;
+  padding: 2rem;
+  background: rgb(229, 255, 152);
+}
+
+#logo {
+  grid-column: 1/2;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  align-self: center;
+  border-right: 1px dotted rgb(100, 100, 100);
+  min-width: 180px;
+}
+
+#menu {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 1rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+#content {
+  background: #e1f7f6;
+  padding: 4rem;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#manifiesto {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+#manifiesto p {
+  margin-bottom: 1rem;
+}
+
+#manifiesto ul,
+#firmantes ol {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+#firmantes {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#firmantes li {
+  margin-bottom: 1rem;
+}
+
+#firma {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#firma p {
+  margin-bottom: 1.5rem;
+}
+
+#firma li {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#manifiestoLink,
+#firmantesLink,
+#firmaLink {
+  cursor: pointer;
+}
+
+#manifiestoLink {
+  grid-column: 2/3;
+}
+
+#firmantesLink {
+  grid-column: 3/4;
+}
+
+#firmaLink {
+  grid-column: 4/5;
+}
+
+.lower {
+  color: rgb(100, 100, 100);
+  font-size: 0.85em;
+}
+
+@media (max-width: 768px) {
+  #header {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  #menu {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  #manifiestoLink,
+  #firmantesLink,
+  #firmaLink {
+    grid-column: 1/2;
+  }
+
+  #content {
+    padding: 3rem 1rem;
+  }
+}
