@@ -2,297 +2,762 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>- Juristas por la eutanasia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juristas por la eutanasia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400&family=Oswald:wght@500&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="Description" content="Manifiesto de juristas a favor de la despenalización de la eutanasia en España. Iniciativa de la asociación Derecho a Morir Dignamente">
 </head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" />
 <script src="main.js" defer></script>
+<script src="smtp.js" defer></script>
 
 <body>
   <div id="background">
-    <div id="header">
-      <div id="logo">
-        <div class="logo">Juristas por la eutanasia</div>
-      </div>
-      <div id="menu">
-        <div class="menuitem" id="manifiestoLink">Manifiesto</div>
-        <div class="menuitem" id="firmantesLink">Firmantes</div>
-        <div class="menuitem" id="firmaLink">Firma</div>
-      </div>
-    </div>
-    <div id="content">
-      <div id="manifiesto">
-        <p>Quienes, desde el mundo del derecho, suscribimos este documento, compartimos la voluntad de contribuir a que el Parlamento aborde el cambio que nuestra sociedad demanda sobre la disposición de la propia vida y, muy especialmente, en lo que respecta a la punibilidad de la intervención de terceros.</p>
-        <p>Los cambios introducidos en nuestro ordenamiento en los últimos años, muy especialmente por la ley 41/2002, supusieron en su momento un avance importante al acotar el deber de tratamiento médico, supeditándolo a la voluntad autónoma del paciente y no a las posibilidades técnicas de mantener la vida. En este sentido, expresamos nuestra honda preocupación por la reciente modificación que la disposición final segunda de la ley 26/2015 ha hecho del consentimiento por representación, hasta el punto de vaciarlo de contenido real.</p>
-        <p>En todo caso, y a pesar de las leyes autonómicas denominadas «de muerte digna», permanece fuera del ámbito de libre decisión personal la obtención de ayuda experta para finalizar la propia vida de un modo seguro, pacífico e indoloro cuando, a criterio del interesado, la vida que resta no merece ser vivida.</p>
-        <p>Castigar con penas privativas de libertad a quienes presten una ayuda benefactora solicitada libre, seria y reiteradamente por una persona que se encuentra en la lamentable situación que describe el artículo 143.4 del vigente Código Penal, so pretexto de la protección jurídica de un supuesto bien –una vida desprovista de dignidad que rechaza su titular–, constituye una crueldad añadida al obligarle a vivir contra su voluntad, o abocarle a una muerte trágica y violenta, cosas ambas incompatibles con el sistema de valores que incorpora nuestra Constitución</p>
-        <p>Con plena convicción, afirmamos que el artículo 15 de la Constitución Española de 1978 debe interpretarse a la luz del libre desarrollo de la personalidad y del estricto respeto a la dignidad personal que la propia Constitución reconoce como «fundamentos del orden político y la paz social». En consecuencia, una vida impuesta a su titular no puede merecer la consideración de bien jurídico protegido. Ello crearía un «deber de vivir» en lugar del «derecho a la vida» y pone en entredicho la legalidad, tanto del rechazo a un tratamiento salvador como de la limitación terapéutica ante situaciones de carácter irreversible.</p>
-        <p>El Legislativo no puede seguir ignorando la voluntad popular soberana. Tantas veces como se le ha preguntado, la última muy recientemente[1], la sociedad española, sin restricción de edad, credos ni adscripción política, ha manifestado de forma abrumadoramente mayoritaria su voluntad de que se regulen legalmente las conductas eutanásicas.</p>
-        <p>Por otra parte, la experiencia acumulada en los países de nuestro entorno cultural y político que regularon las conductas eutanásicas hace un número importante de años, indica que no se ha materializado el impacto negativo sobre las poblaciones vulnerables que algunos emplean como argumento para frenar la legalización de las conductas eutanásicas.</p>
-        <p>Por todo lo expuesto, quienes firmamos este documento, solicitamos al nuevo Parlamento nacido de las próximas elecciones legislativas:</p>
-        <ul id="requests">
-          <li class="manifiestoitem">La despenalización de las conductas contempladas en el artículo 143.4.</li>
-          <li class="manifiestoitem">La derogación de la disposición final segunda de la ley 26/2015.</li>
-          <li class="manifiestoitem">La apertura de un debate parlamentario, transparente a la ciudadanía, que culmine en una ley reguladora de las conductas eutanásicas garante de la libre autonomía personal proclamada por nuestra máxima norma, al tiempo que de la obligada protección de colectivos presuntamente vulnerables. La ley incluirá una adecuada regulación del suicidio asistido.</li>
-        </ul>
+    <header>
+      <div id="header">
+        <div id="logo">
+          <div class="logo"><a href="#">Juristas por la eutanasia</a></div>
+        </div>
 
-        <p>Esperamos que el nuevo Parlamento sea, por fin, capaz de llevar a la ley las aspiraciones de más libertad y autonomía demandadas por el pueblo al que representan.</p>
+        <nav>
+          <div id="menu">
+            <div class="menuitem" id="manifiestoLink">Manifiesto</div>
+            <div class="menuitem" id="firmantesLink">Firmantes</div>
+            <div class="menuitem" id="firmaLink">Firma</div>
+          </div>
+        </nav>
       </div>
-      <div id="firmantes" class="inv">
-        <ol>
-          <li>Luisa Cuerda - Catedrática de Universidad</li>
-          <li>Ana Isabel Cerezo Domínguez - Profesora Titular de Derecho Penal</li>
-          <li>Daniel Varona Gómez - Profesor de Universidad</li>
-          <li>Hernán Hormazábal Malarée - Catedrático de Derecho Penal</li>
-          <li>Víctor Gómez Martín - Profesor Titular (Catedrático acr.) de Derecho penal</li>
-          <li>Fernando Navarro Cardoso - Profesor de Universidad</li>
-          <li>Charo Vicente Martinez - Catedrática de Universidad</li>
-          <li>Carmen Salinero Alonso - Profesora Titular – UPLGC</li>
-          <li>Cristina Fernández-Pacheco Estrada - Profesora de Derecho Penal</li>
-          <li>Carmen Juanatey Dorado - Profesora de Universidad</li>
-          <li>Miguel Abel Souto - Catedrático acr. de Derecho Penal</li>
-          <li>Miguel Ángel Núñez Paz - Catedratico acreditado de Derecho Penal</li>
-          <li>Patricia Faraldo Cabana - Catedrática de Derecho Penal – UDC</li>
-          <li>Juan M. Terradillos Basoco - Profesor de Universidad</li>
-          <li>Gonzalo Escobar Marulanda - Profesor de Universidad</li>
-          <li>Julia Ropero Carrasco - Profesor de Universidad</li>
-          <li>María Acale Sánchez - Catedrática de Derecho Penal – UCA</li>
-          <li>Ana Isabel Pérez Cepeda - Profesora de Universidad – USAL</li>
-          <li>Joan Baucells Lladós - Profesor Titular de Derecho Penal – UAB</li>
-          <li>Teresa Rodríguez Montañés - Catedrática de Universidad</li>
-          <li>Carmen Lamarca Perez - Profesora de Derecho Penal</li>
-          <li>Mirentxu Corcoy Bidasolo - Catedrática de Derecho Penal</li>
-          <li>Mª José Cuenca García - Profesora de Derecho Penal</li>
-          <li>Inés Olaizola Nogales - Catedrática de Derecho Penal</li>
-          <li>Ana Pérez Machío - Profesora Titular de Derecho Penal – UPV/EHU</li>
-          <li>María José Cruz Blanca - Profesora de Derecho Penal</li>
-          <li>Augusto Maeso Ventureira Juez</li>
-          <li>Juan Muñoz Sánchez - Catedrático de Derecho Penal – UMA</li>
-          <li>Luis Ramón Ruiz Rodríguez - Profesor Titular de Universidad</li>
-          <li>Margarita Bonet Esteva - Profesora de Universidad</li>
-          <li>María Isabel González Tapia - Profesora de Derecho Penal</li>
-          <li>Concepción Carmona Salgado - Catedrática de Universidad</li>
-          <li>Diego Gómez Iniesta - Profesor Titular de Universidad</li>
-          <li>José Luis Ramírez Ortiz - Magistrado</li>
-          <li>José Manuel Paredes Castañón - Catedrático de Derecho Penal – UNIOVI</li>
-          <li>Nieves Sanz Mulas - Profesora Titular de Universidad</li>
-          <li>Esther Pomares Cintas - Profesora de Universidad</li>
-          <li>Miguel Díaz y García Conlledo - Catedrático de Derecho Penal</li>
-          <li>Soledad Barber Burusco - Profesora</li>
-          <li>Leticia Jericó Ojer - Profesora de Derecho Penal – UPN</li>
-          <li>Miguel Ángel Presno Linera - Profesor de Derecho Constitucional</li>
-          <li>Nicolás García Rivas - Catedrático de Derecho Penal</li>
-          <li>Adolfo Barreda Salamanca - Abogado</li>
-          <li>Francisco Montijano Serrano - Fiscal</li>
-          <li>Inma Valeije Alvarez - Profesora Titular de Derecho Penal – UVIGO</li>
-          <li>Ignacio F. Benitez Ortúzar - Catedrático de Derecho Penal – UJAEN</li>
-          <li>Juan Carlos Carbonell Mateu - Catedrático de Derecho Penal</li>
-          <li>Elvira Landín Aguirre - Abogada</li>
-          <li>Antonio Doval Pais - Profesor de Universidad</li>
-          <li>María José Cuenca García - Profesora de Derecho Penal</li>
-          <li>Manuel Portero Henares - Profesor de Universidad</li>
-          <li>Mercedes García Aran - Catedrática de Derecho Penal</li>
-          <li>María Antonia Llombart Núñez - Abogada y Profesora Asociada</li>
-          <li>Germán Orón Moratal - Catedrático de Derecho Financiero y Tributario</li>
-          <li>Carlos Lema Añón - Profesor de Filosofía del Derecho – UC3M</li>
-          <li>Josep Maria Tamarit Sumalla - Catedrático de Universidad</li>
-          <li>María José Senent Vidal - Profesora de Universidad</li>
-          <li>María Dolores Blázquez Peinado - Profesora Titular de Derecho Internacional</li>
-          <li>Rafael Escudero Alday - Profesor de Universidad – UC3M</li>
-          <li>Cristina Pauner Chulvi - Profesora de Universidad</li>
-          <li>Francisco de Antonio Juesas - Abogado</li>
-          <li>Diego González Ortiz - Profesor de Universidad</li>
-          <li>Ignacio Campoy Cervera - Profesor Titular de Universidad</li>
-          <li>Jose Luis Díez Ripollés - Catedrático de Universidad</li>
-          <li>Mª Ángeles Pérez Cebadera - Profesora Titular de Derecho Procesal</li>
-          <li>Osman Hamed Fontanilla - Jurista</li>
-          <li>Francisco Javier Ruiz-Ayucar Seifert - Abogado</li>
-          <li>Carlos de Querol de Aragón - Abogado</li>
-          <li>Miguel Bustos Rubio - Profesor de Derecho Penal</li>
-          <li>Carmen Álvarez Alameda - Abogada</li>
-          <li>Julia Serrano Miguel Trabajadora por cuenta ajena</li>
-          <li>María José Mateu Carruana - Profesora de Universidad</li>
-          <li>Miguel Sagüés Navarro - Abogado de trabajadores – CCOO</li>
-          <li>Joaquín Varela Suanzes-Carpegna - Catedrático de Derecho Constitucional</li>
-          <li>Patricia Vilán Lorenzo - Diputada (PSdeG-PSOE) en el Parlamento de Galicia</li>
-          <li>José Manuel Gómez Benítez - Catedrático de Universidad</li>
-          <li>Carlos Gerardo Vila Calvo - Abogado</li>
-          <li>José Manuel Sánchez Hernández - Abogado</li>
-          <li>Montserrat Vicente Solar - Abogada</li>
-          <li>Julián Ongay González - Abogado</li>
-          <li>Federico Arnau Moya - Profesor de Universidad</li>
-          <li>Adriana Santamaria de Mingo - Jurista (desempleada)</li>
-          <li>Vicent Santamaría de Mingo - Profesor</li>
-          <li>Judith Lerena Ortiz - Jurista</li>
-          <li>Carlos Moreno Hernández - Profesor jubilado</li>
-          <li>Mª Jesús Sánchez Obeso - Abogada</li>
-          <li>Pedro Jurado Montejano - Funcionario</li>
-          <li>Mª Isabel Juan Mercadal - Jubilada</li>
-          <li>Santiago Urios Moliner - Profesor de Universidad</li>
-          <li>Myriam L.Correa Elgul - Abogada jubilada</li>
-          <li>Jacinto Morano González - Abogado, diputado de Podemos en la Asamblea de Madrid</li>
-          <li>Marco Candela Pokorna - Abogado, diputado de Podemos en la Asamblea de Madrid</li>
-          <li>Alejandra Agreda - Abogada</li>
-          <li>Lorenzo Peña y Gonzalo - Profesor de Investigación jubilado, CSIC</li>
-          <li>Antonio Arroyo Gil - Profesor de Derecho constitucional – UAM</li>
-          <li>Laura Díaz Román - Abogada, diputado de Podemos en la Asamblea de Madrid</li>
-          <li>Azahara Vicente Jara - Abogada</li>
-          <li>Manuel Atienza Rodríguez - Profesor de Filosofía del Derecho</li>
-          <li>Francisco Javier Álvarez García - Catedrático de Derecho Penal</li>
-          <li>María del Mar Herrero Roche - Abogada</li>
-          <li>María Dolores Valdueza Blanco - Profesora de Universidad</li>
-          <li>Manuela Torres Calzada - Abogada</li>
-          <li>Cristina Ventura Alameda - Abogada</li>
-          <li>Jorge Arroyo Martínez - Abogado y mediador</li>
-          <li>Florentina Carrasco Serrano - Abogada</li>
-          <li>Beatriz Monasterio Chicharro - Abogada</li>
-          <li>David Carrasco Serra - Abogado</li>
-          <li>Ángeles Garzón Morales - Abogada</li>
-          <li>María Begoña Lalana Alonso - Abogada</li>
-          <li>Remedios Aviles Mañoso - Abogada</li>
-          <li>Mª Jesús Díaz Veiga - Abogada</li>
-          <li>Isabel Soberón García de Enterría - Procuradora de los Tribunales</li>
-          <li>Antonio Cuesta Gómez - Médico/ Lic. Derecho</li>
-          <li>Pilar Hermoso Gómez - Abogada</li>
-          <li>Esperanza Fernández Galán - Abogada</li>
-          <li>Mónica Espinós Ortueta - Jurista</li>
-          <li>Paz Fernández Felgueroso - Abogada</li>
-          <li>Víctor José Sánchez Pajares - Abogado</li>
-          <li>Luis Guerra - Abogado</li>
-          <li>María Julia Pérez Cervera - Abogada</li>
-          <li>Concepción Martín Pérez - Abogada</li>
-          <li>Mariano Gómez Jara - Abogado</li>
-          <li>Nuria Gómez Marichalar - Abogada</li>
-          <li>Mª Agnès Jové Subirós - Abogada</li>
-          <li>Francisca Mas Busquets - Abogada</li>
-          <li>Enrique Frieyro Rodríguez-Medel - Abogado jubilado</li>
-          <li>Ángel López Jubete - Abogado</li>
-          <li>Yolanda Hernández Guerrero - Abogada</li>
-          <li>Consuelo Pau Pérez - Abogada</li>
-          <li>Josefa Rodríguez Aguilar - Abogada</li>
-          <li>Monserrate Santandreu Sánchez - Abogado</li>
-          <li>Francisco Prendes Quirós - Abogado</li>
-          <li>Artur Ridaura García - Asesor jurídico municipal</li>
-          <li>Fernando Flores Giménez - Profesor de Derecho Constitucional</li>
-          <li>Carmen Tomás-Valiente Lanuza - Profesora Titular de Universidad</li>
-          <li>Cristina Sánchez Mezquida - Funcionaria del cuerpo de técnicos superiores de la Generalitat de Catalunya. Licenciada en Derecho</li>
-          <li>Sofía García-Hortelano Martín-Ampudia - Abogada</li>
-          <li>Begoña Ferrandis Torregrosa - Abogada</li>
-          <li>Luis Cañadilla Gonzalez Jubilado</li>
-          <li>José Luis Rivera Carpintero - Abogado</li>
-          <li>Fernando Espinós Borràs de Quadras - Abogado y mediador</li>
-          <li>Herminia Suárez Mata - Abogada</li>
-          <li>Ignacio Palacios Gil de Antuñano - Registrador de la Propiedad</li>
-          <li>Ramón Alegre Espert - Abogado</li>
-          <li>Víctor Barrera Rodríguez - Abogado jubilado</li>
-          <li>Elena Regúlez Morales - Abogada</li>
-          <li>Ascensión Cambrón Infante - Profesora de Universidad</li>
-          <li>Ángela Sánchez Iglesias - Abogada jubilada</li>
-          <li>Ascensión Oiza Casado - Magistrada jubilada</li>
-          <li>José Ángel Brandariz García - Profesor de Derecho Penal – UDC</li>
-          <li>Asunción Carmona Gutiérrez - Abogada</li>
-          <li>Beatriz Cruz Márquez - Profesora de Universidad</li>
-          <li>Eva María Souto García - Profesora Ayudante Doctora de Universidad</li>
-          <li>Cristina Pérez Valero - Abogada</li>
-          <li>Isabel Ros Rodríguez - Agente Sindical</li>
-          <li>Manuel Prieto Romero - Abogado</li>
-          <li>Rafael Ortiz Rodríguez - Consultor</li>
-          <li>Julián Romero Marín - Funcionario</li>
-          <li>Alfonso López Rodríguez - Abogado</li>
-          <li>Miguel Vázquez Sarti - Abogado</li>
-          <li>Pedro Rubio Royo - Abogado</li>
-          <li>María Ángeles Fuentes Loureiro - Investigadora</li>
-          <li>Luz María Puente Aba - Profesora de Universidad</li>
-          <li>María Luisa Turrión Santa María - Abogada</li>
-          <li>Cristina de Castro Gómez-Carrillo - Abogada</li>
-          <li>Diego Garcia Amatos - Abogado</li>
-          <li>Nuria Terribas Salas - Jurista, especialista en bioética</li>
-          <li>José María Mena Álvarez - Fiscal jubilado</li>
-          <li>Santiago Vidal Marsal juez, - profesor de derecho penal y criminología. Senador por ERC</li>
-          <li>Raúl Susín Betrán - Profesor Titular de Filosofía del Derecho</li>
-          <li>Maria Gràcia Costa Paretas - Abogada</li>
-          <li>José A. Cuenca T. - Profesor de Bioética y Pastor Bautista Protestante</li>
-          <li>Susana Barbosa García - Abogada</li>
-          <li>Begoña López Anguita - Magistrada</li>
-          <li>Carlos Barra Galán - Médico y Licenciado en Derecho</li>
-          <li>Nicolás García Rivas - Catedrático de Derecho Penal</li>
-          <li>Maria Josefa Tejera Osuna - Jurista de la Administración</li>
-          <li>Pablo Surroca Casas - Magistrado</li>
-          <li>José Alberto Ruiz Sánchez - Juez</li>
-          <li>Féliz Azón Vilas - Carrera Judicial</li>
-          <li>Gema Tarín Cañadas - Abogada</li>
-          <li>Santiago García García - Magistrado</li>
-          <li>Augusto Maeso Ventureira Juez</li>
-          <li>Josep Maria Noales Tintoré - Magistrado</li>
-          <li>Ana María Álvarez de Yraola - Magistrada</li>
-          <li>Julio Piniés Nogués - Abogado</li>
-          <li>Mª Ángeles Ruiz Colomé - Profesora Titular de Derecho Internacional Público</li>
-          <li>Raúl Orduna - Abogado</li>
-          <li>Alberto Ballester Blasco - Abogado</li>
-          <li>Pablo Andrés Gerbolés Sánchez - Abogado</li>
-          <li>Juan Antonio García Amado - Catedrático de Filosofía del Derecho</li>
-          <li>Javier Rufino Rus - Fiscal y - Profesor Universitario</li>
-          <li>Carlos García-Berro Montilla - Fiscal</li>
-          <li>María José Segarra Crespo - Fiscal</li>
-          <li>Eduardo Esteban Rincón - Fiscal</li>
-          <li>Montserrat Luque Molina - Fiscal</li>
-          <li>Emilio Fernández García - Fiscal</li>
-          <li>Teresa Compte Massachs - Fiscal</li>
-          <li>Cristóbal Francisco Fábrega Ruiz - Fiscal</li>
-          <li>Pedro Crespo Barquero - Fiscal de Sala del Tribunal Supremo</li>
-          <li>José Manuel Rubio de la Iglesia - Fiscal</li>
-          <li>Julia del Rosal Alonso - Fiscal</li>
-          <li>Javier Comyn Rodríguez - Inspector Fiscal</li>
-          <li>José Mª Mena Álvarez - Fiscal Jubilado</li>
-          <li>Diego Villafañé Díez - Fiscal. Vicepresidente Unión Progresista - Fiscales</li>
-          <li>Álvaro García Ortiz - Fiscal</li>
-          <li>María Pilar Rodríguez Fernández Carrera - Fiscal</li>
-          <li>Carlos V. Clavijo Sánchez-Torrejón - Consultor Jurídico</li>
-          <li>Eduardo Tolosana Villegas - Abogado Jubilado</li>
-          <li>Carmen Esteban Escudero - Licenciada en Derecho Jubilada</li>
-          <li>Miguel Ángel Núñez Paz - Catedrático acr. de Derecho Penal</li>
-          <li>Raúl Orduna Ara - Abogado</li>
-          <li>Antonio Sáez López - Abogado</li>
-          <li>Mercedes Pérez Barrios - Magistrada</li>
-          <li>Inmaculada González García - Abogada</li>
-          <li>José Luis Sanjurjo Liñán - Abogado</li>
-          <li>Ana María Castro Martínez - Abogada</li>
-          <li>Óscar Lomba Álvarez - Abogado</li>
-          <li>María de los Ángeles Rodríguez Martín - Abogada</li>
-          <li>Julián Ongay González - Abogado</li>
-          <li>Joaquín Lillo - Jurista</li>
-          <li>José Antonio Rodríguez Sáez - Magistrado</li>
-          <li>Alejandro Antonio Vázquez Gómez - Abogado</li>
-          <li>Adriana Bastida Cruz - Abogada</li>
-          <li>Beatriz Sestayo Doce - Abogada</li>
-          <li>Carmen Andreu Arnalte - Fiscal</li>
-          <li>María Jesús Veiga Freire - Abogada</li>
-          <li>Felisa María González Ruiz - Procuradora</li>
-          <li>Ivan Sobrin Encinas - Abogado</li>
-          <li>Alicia Bermejo Martín - Jurista</li>
-          <li>Adriana Santamaría de Mingo - Abogada</li>
-          <li>Juan José Navarro Fajardo - Magistrado jubilado</li>
-          <li>Antonio Ugarte Tundido - Abogado</li>
-          <li>María Purificación Vallejo Llorente - Abogado</li>
-          <li>Manuel Rojo Alejos - Catedrático de Universidad</li>
-        </ol>
+    </header>
+    <main>
+      <div id="content">
+        <div id="manifiesto">
+          <p>
+            En los próximos días, las Cortes Generales abordarán la tramitación parlamentaria de la proposición de <a rel="noopener" href="http://www.congreso.es/portal/page/portal/Congreso/Congreso/Iniciativas?_piref73_2148295_73_1335437_1335437.next_page=/wc/servidorCGI&CMD=VERLST&BASE=IW14&PIECE=IWA4&FMT=INITXD1S.fmt&FORM1=INITXLUS.fmt&QUERY=%28I%29.ACIN1.+%26+%28EUTANASIA%29.ALL.&DOCS=1-1" target="_blank">Ley Orgánica de Regulación de la Eutanasia</a>. El reconocimiento del derecho a decidir sobre la propia vida y la no consideración de la imposición de esta, más allá de la voluntad de su titular, es una consecuencia coherente de la dignidad de la persona, que el <a rel="noopener" href="https://app.congreso.es/consti/constitucion/indice/titulos/articulos.jsp?ini=10&tipo=2" target="_blank">artículo 10 de la Constitución</a> proclama como «fundamento del orden político y de la paz social».
+          </p>
+          <p>
+            Solo así alcanza su pleno sentido el Estado social y democrático de Derecho, pues solo mediante la consideración de los ciudadanos y ciudadanas como dueños de sus propios destinos, sin más limitación que el respeto a los derechos de los demás –y ese es el sentido del término «dignidad»– es posible concebir su funcionamiento.</p>
+          <p>
+            La vida, derecho fundamental sin cuya garantía no es posible el ejercicio de ningún otro, no puede convertirse en una imposición a quien, en pleno uso de su capacidad de decisión, manifiesta de manera inequívoca su voluntad de morir cuando se encuentra en unas determinadas condiciones que le resultan insoportables. Y es deber del Estado democrático facilitar que tan trascendental tránsito pueda llevarse a cabo con la asistencia de quienes, por sus conocimientos profesionales, pueden hacerlo menos traumático y con los menores sufrimientos posibles. Y todo ello sin merma alguna del deber de proporcionar todos los cuidados paliativos a quien los necesite para mitigar su sufrimiento.
+          </p>
+          <p>
+            La regulación de ese proceso, estableciendo las necesarias garantías para que la voluntad propia sea inequívoca, firme y no pueda ser suplantada, y para que su ejecución se materialice de la manera más acorde con la dignidad constituyen, precisamente, el contenido de la proposición de Ley Orgánica.
+          </p>
+          <p>
+            Nada de esto tiene que ver con prácticas que, ignorantes precisamente de esa dignidad, hayan abandonado a su suerte a enfermos que precisaban de asistencia médica, ni mucho menos con el inicio de desvalor de la protección de la vida humana, como se ha pretendido. Al contrario, son fruto de una Bioética y un Derecho que anteponen la persona y su dignidad a consideraciones que, debiendo ser respetadas, no pueden ser impuestas en un Estado democrático que proclama la libertad y el pluralismo político como «valores superiores de su ordenamiento jurídico».
+          </p>
+          <p>
+            Por todo ello, los firmantes, juristas comprometidos con una aplicación humana y democrática del Derecho, manifestamos nuestro apoyo a la misma.
+          </p>
+        </div>
+        <div id="firmantes" class="inv">
+          <ul class="firmantes">
+            <li>Joan Carles Carbonell<span class="job">Catedrático de Derecho Penal (UV)</span></li>
+            <li>Lourdes Barón Jaqués<span class="job">Abogada</span></li>
+            <li>Juan Blas Cambronero Donate<span class="job">Licenciado en Derecho</span></li>
+            <li>Alicia Brox<span class="job">Investigadora Filosofía del Derecho (Unizar)</span></li>
+            <li>Javier de Lucas<span class="job">Catedrático de Filosofía del Derecho (IDHUV)</span></li>
+            <li>Roger Campione<span class="job">Profesor de Filosfía del Derecho (UniOvi)</span></li>
+            <li>Miguel Ángel Presno Linera<span class="job">Catedrático de Derecho Constitucional (UniOvi)</span></li>
+            <li>Antonio Magdaleno Alegría<span class="job">Catedrático de Derecho Constitucional (UniCan)</span></li>
+            <li>Rosa Ruiz Lapeña<span class="job">Profesora Titular de Derecho Constitucional (Unizar)</span></li>
+            <li>Eva Sáenz Royo<span class="job">Profesora Titular de Derecho Constitucional (Unizar)</span></li>
+            <li>Manuel Contreras Casado<span class="job">Catedrático de Derecho Constitucional jubilado (Unizar)</span></li>
+            <li>Fabiola Meco Tébar<span class="job">Profesora Ayudante Doctora de Derecho Civil (UV)</span></li>
+            <li>Ana María Valero Heredia<span class="job">Profesora Titular de Derecho Constitucional (UCLM)</span></li>
+            <li>Enrique Cebrián Zazurca<span class="job">Profesor de Derecho Constitucional (Unizar)</span></li>
+            <li>Mercedes Camps Herrero<span class="job">Abogada</span></li>
+            <li>Octavio Salazar Benítez<span class="job">Catedrático de Derecho Constitucional (UCO)</span></li>
+            <li>Ana Isabel Pérez Cepeda<span class="job">Catedrática de Derecho Penal (USAL)</span></li>
+            <!-- <li>
+              Luisa Cuerda
+              <span class="job">Catedrática de Universidad</span>
+            </li>
+            <li>
+              Ana Isabel Cerezo Domínguez
+  
+              <span class="job">Profesora Titular de Derecho Penal</span>
+            </li>
+            <li>
+              Daniel Varona Gómez
+  
+              <span class="job">Profesor de Universidad</span>
+            </li>
+            <li>
+              Hernán Hormazábal Malarée
+              <span class="job">Catedrático de Derecho Penal</span>
+            </li>
+            <li>
+              Víctor Gómez Martín
+              <span class="job">Profesor Titular (Catedrático acr.) de Derecho penal</span>
+            </li>
+            <li>
+              Fernando Navarro Cardoso
+              <span class="job">Profesor de Universidad</span>
+            </li>
+            <li>
+              Charo Vicente Martinez
+              <span class="job">Catedrática de Universidad</span>
+            </li>
+            <li>
+              Carmen Salinero Alonso
+              <span class="job">Profesora Titular – UPLGC</span>
+            </li>
+            <li>
+              Cristina Fernández-Pacheco Estrada
+              <span class="job">Profesora de Derecho Penal</span>
+            </li>
+            <li>
+              Carmen Juanatey Dorado
+              <span class="job">Profesora de Universidad</span>
+            </li>
+            <li>
+              Miguel Abel Souto
+              <span class="job">Catedrático acr. de Derecho Penal</span>
+            </li>
+            <li>
+              Miguel Ángel Núñez Paz
+              <span class="job">Catedratico acreditado de Derecho Penal</span>
+            </li>
+            <li>
+              Patricia Faraldo Cabana
+              <span class="job">Catedrática de Derecho Penal – UDC</span>
+            </li>
+            <li>
+              Juan M. Terradillos Basoco
+              <span class="job">Profesor de Universidad</span>
+            </li>
+            <li>
+              Gonzalo Escobar Marulanda
+              <span class="job">Profesor de Universidad</span>
+            </li>
+            <li>
+              Julia Ropero Carrasco
+              <span class="job">Profesor de Universidad</span>
+            </li>
+            <li>
+              María Acale Sánchez
+              <span class="job">Catedrática de Derecho Penal – UCA</span>
+            </li>
+            <li>
+              Ana Isabel Pérez Cepeda
+              <span class="job">Profesora de Universidad – USAL</span>
+            </li>
+            <li>
+              Joan Baucells Lladós
+              <span class="job">Profesor Titular de Derecho Penal – UAB</span>
+            </li>
+            <li>
+              Teresa Rodríguez Montañés
+              <span class="job">Catedrática de Universidad</span>
+            </li>
+            <li>
+              Carmen Lamarca Perez
+              <span class="job">Profesora de Derecho Penal</span>
+            </li>
+            <li>
+              Mirentxu Corcoy Bidasolo
+              <span class="job">Catedrática de Derecho Penal</span>
+            </li>
+            <li>
+              Mª José Cuenca García
+              <span class="job">Profesora de Derecho Penal</span>
+            </li>
+            <li>
+              Inés Olaizola Nogales
+              <span class="job">Catedrática de Derecho Penal</span>
+            </li>
+            <li>
+              Ana Pérez Machío
+              <span class="job">Profesora Titular de Derecho Penal – UPV/EHU</span>
+            </li>
+            <li>
+              María José Cruz Blanca
+              <span class="job">Profesora de Derecho Penal</span>
+            </li>
+            <li>Augusto Maeso Ventureira <span class="job">Juez</span></li>
+            <li>
+              Juan Muñoz Sánchez
+              <span class="job">Catedrático de Derecho Penal – UMA</span>
+            </li>
+            <li>
+              Luis Ramón Ruiz Rodríguez
+              <span class="job">Profesor Titular de Universidad</span>
+            </li>
+            <li>
+              Margarita Bonet Esteva
+              <span class="job">Profesora de Universidad</span>
+            </li>
+            <li>
+              María Isabel González Tapia
+              <span class="job">Profesora de Derecho Penal</span>
+            </li>
+            <li>
+              Concepción Carmona Salgado
+              <span class="job">Catedrática de Universidad</span>
+            </li>
+            <li>
+              Diego Gómez Iniesta
+              <span class="job">Profesor Titular de Universidad</span>
+            </li>
+            <li>José Luis Ramírez Ortiz <span class="job">Magistrado</span></li>
+            <li>
+              José Manuel Paredes Castañón
+              <span class="job">Catedrático de Derecho Penal – UNIOVI</span>
+            </li>
+            <li>
+              Nieves Sanz Mulas
+              <span class="job">Profesora Titular de Universidad</span>
+            </li>
+            <li>
+              Esther Pomares Cintas
+              <span class="job">Profesora de Universidad</span>
+            </li>
+            <li>
+              Miguel Díaz y García Conlledo
+              <span class="job">Catedrático de Derecho Penal</span>
+            </li>
+            <li>Soledad Barber Burusco <span class="job">Profesora</span></li>
+            <li>
+              Leticia Jericó Ojer
+              <span class="job">Profesora de Derecho Penal – UPN</span>
+            </li>
+            <li>
+              Miguel Ángel Presno Linera
+              <span class="job">Profesor de Derecho Constitucional</span>
+            </li>
+            <li>
+              Nicolás García Rivas
+              <span class="job">Catedrático de Derecho Penal</span>
+            </li>
+            <li>Adolfo Barreda Salamanca <span class="job">Abogado</span></li>
+            <li>Francisco Montijano Serrano <span class="job">Fiscal</span></li>
+            <li>
+              Inma Valeije Alvarez
+              <span class="job">Profesora Titular de Derecho Penal – UVIGO</span>
+            </li>
+            <li>
+              Ignacio F. Benitez Ortúzar
+              <span class="job">Catedrático de Derecho Penal – UJAEN</span>
+            </li>
+            <li>
+              Juan Carlos Carbonell Mateu
+              <span class="job">Catedrático de Derecho Penal</span>
+            </li>
+            <li>Elvira Landín Aguirre <span class="job">Abogada</span></li>
+            <li>
+              Antonio Doval Pais
+              <span class="job">Profesor de Universidad</span>
+            </li>
+            <li>
+              María José Cuenca García
+              <span class="job">Profesora de Derecho Penal</span>
+            </li>
+            <li>
+              Manuel Portero Henares
+              <span class="job">Profesor de Universidad</span>
+            </li>
+            <li>
+              Mercedes García Aran
+              <span class="job">Catedrática de Derecho Penal</span>
+            </li>
+            <li>
+              María Antonia Llombart Núñez
+              <span class="job">Abogada y Profesora Asociada</span>
+            </li>
+            <li>
+              Germán Orón Moratal
+              <span class="job">Catedrático de Derecho Financiero y Tributario</span>
+            </li>
+            <li>
+              Carlos Lema Añón
+              <span class="job">Profesor de Filosofía del Derecho – UC3M</span>
+            </li>
+            <li>
+              Josep Maria Tamarit Sumalla
+              <span class="job">Catedrático de Universidad</span>
+            </li>
+            <li>
+              María José Senent Vidal
+              <span class="job">Profesora de Universidad</span>
+            </li>
+            <li>
+              María Dolores Blázquez Peinado
+              <span class="job">Profesora Titular de Derecho Internacional</span>
+            </li>
+            <li>
+              Rafael Escudero Alday
+              <span class="job">Profesor de Universidad – UC3M</span>
+            </li>
+            <li>
+              Cristina Pauner Chulvi
+              <span class="job">Profesora de Universidad</span>
+            </li>
+            <li>
+              Francisco de Antonio Juesas <span class="job">Abogado</span>
+            </li>
+            <li>
+              Diego González Ortiz
+              <span class="job">Profesor de Universidad</span>
+            </li>
+            <li>
+              Ignacio Campoy Cervera
+              <span class="job">Profesor Titular de Universidad</span>
+            </li>
+            <li>
+              Jose Luis Díez Ripollés
+              <span class="job">Catedrático de Universidad</span>
+            </li>
+            <li>
+              Mª Ángeles Pérez Cebadera
+              <span class="job">Profesora Titular de Derecho Procesal</span>
+            </li>
+            <li>Osman Hamed Fontanilla <span class="job">Jurista</span></li>
+            <li>
+              Francisco Javier Ruiz-Ayucar Seifert
+              <span class="job">Abogado</span>
+            </li>
+            <li>Carlos de Querol de Aragón <span class="job">Abogado</span></li>
+            <li>
+              Miguel Bustos Rubio
+              <span class="job">Profesor de Derecho Penal</span>
+            </li>
+            <li>Carmen Álvarez Alameda <span class="job">Abogada</span></li>
+            <li>
+              María José Mateu Carruana
+              <span class="job">Profesora de Universidad</span>
+            </li>
+            <li>
+              Miguel Sagüés Navarro
+              <span class="job">Abogado de trabajadores – CCOO</span>
+            </li>
+            <li>
+              Joaquín Varela Suanzes-Carpegna
+              <span class="job">Catedrático de Derecho Constitucional</span>
+            </li>
+            <li>
+              Patricia Vilán Lorenzo
+              <span class="job">Diputada (PSdeG-PSOE) en el Parlamento de Galicia</span>
+            </li>
+            <li>
+              José Manuel Gómez Benítez
+              <span class="job">Catedrático de Universidad</span>
+            </li>
+            <li>Carlos Gerardo Vila Calvo <span class="job">Abogado</span></li>
+            <li>
+              José Manuel Sánchez Hernández
+              <span class="job">Abogado</span>
+            </li>
+            <li>Montserrat Vicente Solar <span class="job">Abogada</span></li>
+            <li>Julián Ongay González <span class="job">Abogado</span></li>
+            <li>
+              Federico Arnau Moya
+              <span class="job">Profesor de Universidad</span>
+            </li>
+            <li>
+              Adriana Santamaria de Mingo
+              <span class="job">Jurista (desempleada)</span>
+            </li>
+            <li>
+              Vicent Santamaría de Mingo <span class="job">Profesor</span>
+            </li>
+            <li>Judith Lerena Ortiz <span class="job">Jurista</span></li>
+            <li>
+              Carlos Moreno Hernández
+              <span class="job">Profesor jubilado</span>
+            </li>
+            <li>Mª Jesús Sánchez Obeso <span class="job">Abogada</span></li>
+            <li>Pedro Jurado Montejano <span class="job">Funcionario</span></li>
+            <li>Mª Isabel Juan Mercadal <span class="job">Jubilada</span></li>
+            <li>
+              Santiago Urios Moliner
+              <span class="job">Profesor de Universidad</span>
+            </li>
+            <li>
+              Myriam L.Correa Elgul
+              <span class="job">Abogada jubilada</span>
+            </li>
+            <li>
+              Jacinto Morano González
+              <span class="job">Abogado, diputado de Podemos en la Asamblea de Madrid</span>
+            </li>
+            <li>
+              Marco Candela Pokorna
+              <span class="job">Abogado, diputado de Podemos en la Asamblea de Madrid</span>
+            </li>
+            <li>Alejandra Agreda <span class="job">Abogada</span></li>
+            <li>
+              Lorenzo Peña y Gonzalo
+              <span class="job">Profesor de Investigación jubilado, CSIC</span>
+            </li>
+            <li>
+              Antonio Arroyo Gil
+              <span class="job">Profesor de Derecho constitucional – UAM</span>
+            </li>
+            <li>
+              Laura Díaz Román
+              <span class="job">Abogada, diputado de Podemos en la Asamblea de Madrid</span>
+            </li>
+            <li>Azahara Vicente Jara <span class="job">Abogada</span></li>
+            <li>
+              Manuel Atienza Rodríguez
+              <span class="job">Profesor de Filosofía del Derecho</span>
+            </li>
+            <li>
+              Francisco Javier Álvarez García
+              <span class="job">Catedrático de Derecho Penal</span>
+            </li>
+            <li>
+              María del Mar Herrero Roche <span class="job">Abogada</span>
+            </li>
+            <li>
+              María Dolores Valdueza Blanco
+              <span class="job">Profesora de Universidad</span>
+            </li>
+            <li>Manuela Torres Calzada <span class="job">Abogada</span></li>
+            <li>Cristina Ventura Alameda <span class="job">Abogada</span></li>
+            <li>
+              Jorge Arroyo Martínez
+              <span class="job">Abogado y mediador</span>
+            </li>
+            <li>
+              Florentina Carrasco Serrano <span class="job">Abogada</span>
+            </li>
+            <li>
+              Beatriz Monasterio Chicharro
+              <span class="job">Abogada</span>
+            </li>
+            <li>David Carrasco Serra <span class="job">Abogado</span></li>
+            <li>Ángeles Garzón Morales <span class="job">Abogada</span></li>
+            <li>María Begoña Lalana Alonso <span class="job">Abogada</span></li>
+            <li>Remedios Aviles Mañoso <span class="job">Abogada</span></li>
+            <li>Mª Jesús Díaz Veiga <span class="job">Abogada</span></li>
+            <li>
+              Isabel Soberón García de Enterría
+              <span class="job">Procuradora de los Tribunales</span>
+            </li>
+            <li>
+              Antonio Cuesta Gómez
+              <span class="job">Médico/ Lic. Derecho</span>
+            </li>
+            <li>Pilar Hermoso Gómez <span class="job">Abogada</span></li>
+            <li>Esperanza Fernández Galán <span class="job">Abogada</span></li>
+            <li>Mónica Espinós Ortueta <span class="job">Jurista</span></li>
+            <li>Paz Fernández Felgueroso <span class="job">Abogada</span></li>
+            <li>
+              Víctor José Sánchez Pajares <span class="job">Abogado</span>
+            </li>
+            <li>Luis Guerra <span class="job">Abogado</span></li>
+            <li>María Julia Pérez Cervera <span class="job">Abogada</span></li>
+            <li>Concepción Martín Pérez <span class="job">Abogada</span></li>
+            <li>Mariano Gómez Jara <span class="job">Abogado</span></li>
+            <li>Nuria Gómez Marichalar <span class="job">Abogada</span></li>
+            <li>Mª Agnès Jové Subirós <span class="job">Abogada</span></li>
+            <li>Francisca Mas Busquets <span class="job">Abogada</span></li>
+            <li>
+              Enrique Frieyro Rodríguez-Medel
+              <span class="job">Abogado jubilado</span>
+            </li>
+            <li>Ángel López Jubete <span class="job">Abogado</span></li>
+            <li>Yolanda Hernández Guerrero <span class="job">Abogada</span></li>
+            <li>Consuelo Pau Pérez <span class="job">Abogada</span></li>
+            <li>Josefa Rodríguez Aguilar <span class="job">Abogada</span></li>
+            <li>
+              Monserrate Santandreu Sánchez
+              <span class="job">Abogado</span>
+            </li>
+            <li>Francisco Prendes Quirós <span class="job">Abogado</span></li>
+            <li>
+              Artur Ridaura García
+              <span class="job">Asesor jurídico municipal</span>
+            </li>
+            <li>
+              Fernando Flores Giménez
+              <span class="job">Profesor de Derecho Constitucional</span>
+            </li>
+            <li>
+              Carmen Tomás-Valiente Lanuza
+              <span class="job">Profesora Titular de Universidad</span>
+            </li>
+            <li>
+              Cristina Sánchez Mezquida
+              <span class="job">Funcionaria del cuerpo de técnicos superiores de la Generalitat
+                (Cat). Licenciada en Derecho</span>
+            </li>
+            <li>
+              Sofía García-Hortelano Martín-Ampudia
+              <span class="job">Abogada</span>
+            </li>
+            <li>
+              Begoña Ferrandis Torregrosa <span class="job">Abogada</span>
+            </li>
+            <li>Luis Cañadilla Gonzalez <span class="job">Jubilado</span></li>
+            <li>
+              José Luis Rivera Carpintero <span class="job">Abogado</span>
+            </li>
+            <li>
+              Fernando Espinós Borràs de Quadras
+              <span class="job">Abogado y mediador</span>
+            </li>
+            <li>Herminia Suárez Mata <span class="job">Abogada</span></li>
+            <li>
+              Ignacio Palacios Gil de Antuñano
+              <span class="job">Registrador de la Propiedad</span>
+            </li>
+            <li>Ramón Alegre Espert <span class="job">Abogado</span></li>
+            <li>
+              Víctor Barrera Rodríguez
+              <span class="job">Abogado jubilado</span>
+            </li>
+            <li>Elena Regúlez Morales <span class="job">Abogada</span></li>
+            <li>
+              Ascensión Cambrón Infante
+              <span class="job">Profesora de Universidad</span>
+            </li>
+            <li>
+              Ángela Sánchez Iglesias
+              <span class="job">Abogada jubilada</span>
+            </li>
+            <li>
+              Ascensión Oiza Casado
+              <span class="job">Magistrada jubilada</span>
+            </li>
+            <li>
+              José Ángel Brandariz García
+              <span class="job">Profesor de Derecho Penal – UDC</span>
+            </li>
+            <li>Asunción Carmona Gutiérrez <span class="job">Abogada</span></li>
+            <li>
+              Beatriz Cruz Márquez
+              <span class="job">Profesora de Universidad</span>
+            </li>
+            <li>
+              Eva María Souto García
+              <span class="job">Profesora Ayudante Doctora de Universidad</span>
+            </li>
+            <li>Cristina Pérez Valero <span class="job">Abogada</span></li>
+            <li>
+              Isabel Ros Rodríguez
+              <span class="job">Agente Sindical</span>
+            </li>
+            <li>Manuel Prieto Romero <span class="job">Abogado</span></li>
+            <li>Rafael Ortiz Rodríguez <span class="job">Consultor</span></li>
+            <li>Julián Romero Marín <span class="job">Funcionario</span></li>
+            <li>Alfonso López Rodríguez <span class="job">Abogado</span></li>
+            <li>Miguel Vázquez Sarti <span class="job">Abogado</span></li>
+            <li>Pedro Rubio Royo <span class="job">Abogado</span></li>
+            <li>
+              María Ángeles Fuentes Loureiro
+              <span class="job">Investigadora</span>
+            </li>
+            <li>
+              Luz María Puente Aba
+              <span class="job">Profesora de Universidad</span>
+            </li>
+            <li>
+              María Luisa Turrión Santa María
+              <span class="job">Abogada</span>
+            </li>
+            <li>
+              Cristina de Castro Gómez-Carrillo
+              <span class="job">Abogada</span>
+            </li>
+            <li>Diego Garcia Amatos <span class="job">Abogado</span></li>
+            <li>
+              Nuria Terribas Salas
+              <span class="job">Jurista, especialista en bioética</span>
+            </li>
+            <li>
+              José María Mena Álvarez
+              <span class="job">Fiscal jubilado</span>
+            </li>
+            <li>
+              Santiago Vidal Marsal juez,
+              <span class="job">profesor de derecho penal y criminología. Senador por ERC</span>
+            </li>
+            <li>
+              Raúl Susín Betrán
+              <span class="job">Profesor Titular de Filosofía del Derecho</span>
+            </li>
+            <li>Maria Gràcia Costa Paretas <span class="job">Abogada</span></li>
+            <li>
+              José A. Cuenca T.
+              <span class="job">Profesor de Bioética y Pastor Bautista Protestante</span>
+            </li>
+            <li>Susana Barbosa García <span class="job">Abogada</span></li>
+            <li>Begoña López Anguita <span class="job">Magistrada</span></li>
+            <li>
+              Carlos Barra Galán
+              <span class="job">Médico y Licenciado en Derecho</span>
+            </li>
+            <li>
+              Nicolás García Rivas
+              <span class="job">Catedrático de Derecho Penal</span>
+            </li>
+            <li>
+              Maria Josefa Tejera Osuna
+              <span class="job">Jurista de la Administración</span>
+            </li>
+            <li>Pablo Surroca Casas <span class="job">Magistrado</span></li>
+            <li>José Alberto Ruiz Sánchez <span class="job">Juez</span></li>
+            <li>Féliz Azón Vilas <span class="job">Carrera Judicial</span></li>
+            <li>Gema Tarín Cañadas <span class="job">Abogada</span></li>
+            <li>Santiago García García <span class="job">Magistrado</span></li>
+            <li>Augusto Maeso Ventureira <span class="job">Juez</span></li>
+            <li>
+              Josep Maria Noales Tintoré
+              <span class="job">Magistrado</span>
+            </li>
+            <li>
+              Ana María Álvarez de Yraola
+              <span class="job">Magistrada</span>
+            </li>
+            <li>Julio Piniés Nogués <span class="job">Abogado</span></li>
+            <li>
+              Mª Ángeles Ruiz Colomé
+              <span class="job">Profesora Titular de Derecho Internacional Público</span>
+            </li>
+            <li>Raúl Orduna <span class="job">Abogado</span></li>
+            <li>Alberto Ballester Blasco <span class="job">Abogado</span></li>
+            <li>
+              Pablo Andrés Gerbolés Sánchez
+              <span class="job">Abogado</span>
+            </li>
+            <li>
+              Juan Antonio García Amado
+              <span class="job">Catedrático de Filosofía del Derecho</span>
+            </li>
+            <li>
+              Javier Rufino Rus
+              <span class="job">Fiscal y Profesor Universitario</span>
+            </li>
+            <li>
+              Carlos García-Berro Montilla <span class="job">Fiscal</span>
+            </li>
+            <li>María José Segarra Crespo <span class="job">Fiscal</span></li>
+            <li>Eduardo Esteban Rincón <span class="job">Fiscal</span></li>
+            <li>Montserrat Luque Molina <span class="job">Fiscal</span></li>
+            <li>Emilio Fernández García <span class="job">Fiscal</span></li>
+            <li>Teresa Compte Massachs <span class="job">Fiscal</span></li>
+            <li>
+              Cristóbal Francisco Fábrega Ruiz
+              <span class="job">Fiscal</span>
+            </li>
+            <li>
+              Pedro Crespo Barquero
+              <span class="job">Fiscal de Sala del Tribunal Supremo</span>
+            </li>
+            <li>
+              José Manuel Rubio de la Iglesia
+              <span class="job">Fiscal</span>
+            </li>
+            <li>Julia del Rosal Alonso <span class="job">Fiscal</span></li>
+            <li>
+              Javier Comyn Rodríguez
+              <span class="job">Inspector Fiscal</span>
+            </li>
+            <li>
+              José Mª Mena Álvarez
+              <span class="job">Fiscal Jubilado</span>
+            </li>
+            <li>
+              Diego Villafañé Díez
+              <span class="job">Fiscal. Vicepresidente Unión Progresista de Fiscales</span>
+            </li>
+            <li>Álvaro García Ortiz <span class="job">Fiscal</span></li>
+            <li>
+              María Pilar Rodríguez Fernández Carrera
+              <span class="job">Fiscal</span>
+            </li>
+            <li>
+              Carlos V. Clavijo Sánchez-Torrejón
+              <span class="job">Consultor Jurídico</span>
+            </li>
+            <li>
+              Eduardo Tolosana Villegas
+              <span class="job">Abogado Jubilado</span>
+            </li>
+            <li>
+              Carmen Esteban Escudero
+              <span class="job">Licenciada en Derecho Jubilada</span>
+            </li>
+            <li>
+              Miguel Ángel Núñez Paz
+              <span class="job">Catedrático acr. de Derecho Penal</span>
+            </li>
+            <li>Raúl Orduna Ara <span class="job">Abogado</span></li>
+            <li>Antonio Sáez López <span class="job">Abogado</span></li>
+            <li>Mercedes Pérez Barrios <span class="job">Magistrada</span></li>
+            <li>Inmaculada González García <span class="job">Abogada</span></li>
+            <li>José Luis Sanjurjo Liñán <span class="job">Abogado</span></li>
+            <li>Ana María Castro Martínez <span class="job">Abogada</span></li>
+            <li>Óscar Lomba Álvarez <span class="job">Abogado</span></li>
+            <li>
+              María de los Ángeles Rodríguez Martín
+              <span class="job">Abogada</span>
+            </li>
+            <li>Julián Ongay González <span class="job">Abogado</span></li>
+            <li>Joaquín Lillo <span class="job">Jurista</span></li>
+            <li>
+              José Antonio Rodríguez Sáez
+              <span class="job">Magistrado</span>
+            </li>
+            <li>
+              Alejandro Antonio Vázquez Gómez
+              <span class="job">Abogado</span>
+            </li>
+            <li>Adriana Bastida Cruz <span class="job">Abogada</span></li>
+            <li>Beatriz Sestayo Doce <span class="job">Abogada</span></li>
+            <li>Carmen Andreu Arnalte <span class="job">Fiscal</span></li>
+            <li>María Jesús Veiga Freire <span class="job">Abogada</span></li>
+            <li>
+              Felisa María González Ruiz
+              <span class="job">Procuradora</span>
+            </li>
+            <li>Ivan Sobrin Encinas <span class="job">Abogado</span></li>
+            <li>Alicia Bermejo Martín <span class="job">Jurista</span></li>
+            <li>
+              Adriana Santamaría de Mingo <span class="job">Abogada</span>
+            </li>
+            <li>
+              Juan José Navarro Fajardo
+              <span class="job">Magistrado jubilado</span>
+            </li>
+            <li>Antonio Ugarte Tundido <span class="job">Abogado</span></li>
+            <li>
+              María Purificación Vallejo Llorente
+              <span class="job">Abogado</span>
+            </li>
+            <li>
+              Manuel Rojo Alejos
+              <span class="job">Catedrático de Universidad</span>
+            </li> -->
+          </ul>
+        </div>
+        <div id="firma" class="inv">
+          <p class="firmaText"> Si quieres formar apoyar este manifiesto y eres jurista, inscríbete en este formulario.</p>
+          <p class="firmaText">De momento solo aceptamos firmas de personas vinculadas al mundo jurídico: licenciados/as en Derecho, investigadores universitarios en las ramas del Derecho, abogados/as, ficales, magistrados/as, procuradores/as, etc.</p>
+          <p>Hemos tenido un problema con nuestro formulario de inscripción. Si estás interesado en apoyar el manifiesto por favor envíanos un correo electrónico a <a style="color: rgb(179,15,29); text-decoration: underline;" href="mailto:juristas@derechoamorir.org">juristas@derechoamorir.org</a> con tu nombre, apellidos y ocupación (solo juristas).</p>
+          <!-- <form name="formulario" href="#" id="formulario">
+            <input type="text" class="itemFormulario" id="formName" placeholder="Nombre y apellidos">
+            <input type="email" class="itemFormulario" id="formEmail" placeholder="Correo electrónico">
+            <input type="text" class="itemFormulario" id="formJob" placeholder="Ocupación (solo juristas)">
+            <input type="submit" value="Firmar" class="buttonFormulario" onclick="sendEmail()" href="#">
+            
+          </form> -->
+        </div>
       </div>
-      <div id="firma" class="inv">
-        <p class="firmaText">Si quieres formar parte del manifiesto, escríbenos a <a href="mailto:juristas@derechoamorir.org">juristas@derechoamorir.org</a> con: </p>
-        <ul>
-          <li>Nombre y apellidos</li>
-          <li>Profesión <span class="lower">(solo juristas)</span></li>
-          <li>Dirección de correo electrónico <span class="lower">(no la compartiremos con nadie ni se hará pública de ninguna forma)</span></li>
-        </ul>
+    </main>
+    <footer>
+      <div id="footer">
+        <div class="iniciativa">Una iniciativa de:</div>
+        <a href="https://derechoamorir.org" target="_blank" rel="noopener">
+          <div class="logo-dmd"><img alt="logo de la asociación Derecho a Morir Dignamente" src="https://derechoamorir.org/wp-content/uploads/2020/01/DMD-logo-500x500-1.png"></div>
+        </a>
       </div>
-
-    </div>
-    <div id="footer">
-      <div class="img"><img src=""></div>
-    </div>
+    </footer>
   </div>
 </body>
 
